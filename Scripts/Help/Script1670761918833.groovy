@@ -17,25 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-def apkPath = System.getProperty('user.dir') + GlobalVariable.BaseUrl
+Mobile.tap(findTestObject('Help/android.widget.ImageView'), 0)
 
-Mobile.startApplication(apkPath, true)
+Mobile.verifyElementExist(findTestObject('Help/android.widget.TextView - Help'), 0)
+
+Mobile.verifyElementExist(findTestObject('Help/android.widget.TextView - How to order'), 0)
+
+Mobile.verifyElementExist(findTestObject('Help/android.widget.TextView - Payment'), 0)
+
+Mobile.verifyElementExist(findTestObject('Help/android.widget.TextView - Shipping'), 0)
+
+Mobile.verifyElementExist(findTestObject('Help/android.widget.TextView - Profile'), 0)
+
+Mobile.verifyElementExist(findTestObject('Help/android.widget.TextView - Contact us'), 0)
 
 
-Mobile.waitForElementPresent(findTestObject('Home/android.widget.TextView - E-Commerce Android App'), 2)
-
-Mobile.verifyElementExist(findTestObject('Home/android.widget.TextView - Recent'), 0)
-
-Mobile.verifyElementExist(findTestObject('Home/android.widget.TextView - Category'), 0)
-
-Mobile.verifyElementExist(findTestObject('Home/android.widget.TextView - Help'), 0)
-
-Mobile.verifyElementExist(findTestObject('Home/android.widget.TextView - Profile'), 0)
-
-Mobile.verifyElementExist(findTestObject('Home/android.widget.TextView - Apple watch series 3 GPS 42mm Black'), 0)
-
-Mobile.verifyElementExist(findTestObject('Home/android.widget.TextView - U17 USB Portable M3 HUmidifier Air Purifier LED Night Light 200ML'), 
-    0)
-
-Mobile.verifyElementExist(findTestObject('Home/android.widget.TextView'), 0)
 

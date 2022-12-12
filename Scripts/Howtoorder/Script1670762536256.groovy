@@ -17,25 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-def apkPath = System.getProperty('user.dir') + GlobalVariable.BaseUrl
+Mobile.tap(findTestObject('Howtoorder/android.widget.TextView - How to order'), 0)
 
-Mobile.startApplication(apkPath, true)
+Mobile.verifyElementExist(findTestObject('Howtoorder/android.widget.TextView - How to order (1)'), 0)
 
+Mobile.verifyElementExist(findTestObject('Howtoorder/android.view.View - How To Shop At Solomerce Apps'), 0)
 
-Mobile.waitForElementPresent(findTestObject('Home/android.widget.TextView - E-Commerce Android App'), 2)
-
-Mobile.verifyElementExist(findTestObject('Home/android.widget.TextView - Recent'), 0)
-
-Mobile.verifyElementExist(findTestObject('Home/android.widget.TextView - Category'), 0)
-
-Mobile.verifyElementExist(findTestObject('Home/android.widget.TextView - Help'), 0)
-
-Mobile.verifyElementExist(findTestObject('Home/android.widget.TextView - Profile'), 0)
-
-Mobile.verifyElementExist(findTestObject('Home/android.widget.TextView - Apple watch series 3 GPS 42mm Black'), 0)
-
-Mobile.verifyElementExist(findTestObject('Home/android.widget.TextView - U17 USB Portable M3 HUmidifier Air Purifier LED Night Light 200ML'), 
+Mobile.verifyElementExist(findTestObject('Howtoorder/android.view.View - Shopping through the shopping cart, select the items that will be purchased in accordance with your wishes'), 
     0)
 
-Mobile.verifyElementExist(findTestObject('Home/android.widget.TextView'), 0)
+Mobile.verifyElementExist(findTestObject('Howtoorder/android.view.View - Continue by filling the form e-mail with details of the total price'), 
+    0)
+
+Mobile.verifyElementExist(findTestObject('Howtoorder/android.view.View - Upon confirmation from us, please send  transfer payment to one of the following bank account'), 
+    0)
+
+Mobile.verifyElementExist(findTestObject('Howtoorder/android.view.View - We only accept cash payments by wire transfer to a bank account'), 
+    0)
+
+Mobile.closeApplication()
 
